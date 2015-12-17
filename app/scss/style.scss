@@ -1,0 +1,165 @@
+@import 'mixins.scss';
+
+$font-serif: 'PT Serif' 'Times New Roman' serif;
+$font-sans-serif: 'Roboto' 'Helvetica' sans-serif;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $font-serif;
+	background-color: #fafafa;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.titles {
+	text-align: center;
+	margin-bottom: 20px;
+
+	h1, h2 {
+		margin: 0;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		font-family: $font-sans-serif;
+		font-weight: 400;
+		color: rgba(0,0,0, 0.4);
+		font-size: 1em;
+	}
+}
+
+.main-info {
+	width: 90%;
+	display: flex;
+	flex-flow: row nowrap;
+
+}
+
+.greetings, .info {
+	width: 50%;
+}
+
+.greetings {
+	display: flex;
+	flex-flow: column nowrap;
+	margin-right: 14px;
+	text-align: right;
+
+	h3, p {
+		margin: 0;
+	}
+
+	h3 {
+		margin: 0 0 10px 0;
+	}
+
+	p {
+		align-self: flex-end;
+		max-width: 30em;
+	}
+}
+
+.info {
+	display: flex;
+	border-left: 1px solid rgba(0,0,0, 0.2);
+	padding-left: 1em;
+
+	.profile-pic {
+		flex: 1 1 0;
+		margin: 10px 10px 10px 0;
+		display: flex;
+		align-items: center;
+
+		img {
+			border-radius: 50%;
+			width: 100%;
+		}
+	}
+
+	.personal-info {
+		flex: 3 1 0;
+		font-style: normal;
+
+		h3 {
+			margin: 0 0 10px 0;
+		}
+
+		.info-list {
+			.info-row {
+				margin: 0 0 10px 0;
+				display: flex;
+				align-items: center;
+				font-family: $font-sans-serif;
+
+				.svg-mini-icon {
+					height: 1.2em;
+				}
+
+				.info-text {
+					flex: 1 1 auto;
+					padding-left: 1.5em;
+					color: rgba(0,0,0,0.4);
+
+					a {
+						color: inherit;
+						text-decoration: none;
+						transition: all 150ms linear;
+						
+						&:hover {
+							color: rgba(0,0,0,0.6);
+						}
+					}
+				}
+			}
+		}
+
+		.social-icons {
+			margin-top: 1.5em;
+
+			.svg-social-icon {
+				margin: 0 1em;
+				text-decoration: none;
+	
+				svg {
+					height: 2em;
+					transition: all 150ms linear;
+				}
+
+				&:hover {
+					.facebook-icon {
+						fill: #3b5998;
+					}
+
+					.twitter-icon {
+						fill: #00aced;
+					}
+
+					.linkedin-icon {
+						fill: #007bb5;
+					}
+
+					.github-icon {
+						fill: #4078c0;
+					}
+				}
+			}
+		}
+	}
+}
