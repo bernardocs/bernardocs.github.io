@@ -70,7 +70,7 @@ main {
         -ms-flex-item-align: end;
             align-self: flex-end;
     max-width: 30em;
-    margin-bottom: 10px; }
+    margin-bottom: 0.3em; }
 
 .info {
   display: -webkit-flex;
