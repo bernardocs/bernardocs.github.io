@@ -112,6 +112,8 @@ main {
     font-family: "Roboto" "Helvetica" sans-serif; }
     .personal-info .info-list .info-row .svg-mini-icon {
       height: 1.2em; }
+    .personal-info .info-list .info-row .mail-icon {
+      min-width: 19px; }
     .personal-info .info-list .info-row .info-text {
       -webkit-flex: 1 1 auto;
           -ms-flex: 1 1 auto;
