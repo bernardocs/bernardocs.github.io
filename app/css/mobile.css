@@ -29,6 +29,7 @@
 
 .greetings {
   text-align: center;
+  margin-bottom: 2em;
   -webkit-order: 1;
       -ms-flex-order: 1;
           order: 1; }
@@ -38,8 +39,7 @@
             flex: 1 1 auto;
     -webkit-align-self: stretch;
         -ms-flex-item-align: stretch;
-            align-self: stretch;
-    margin-bottom: 10px; }
+            align-self: stretch; }
 
 .contact-profile-pic {
   display: none; }

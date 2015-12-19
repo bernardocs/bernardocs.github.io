@@ -69,7 +69,8 @@ main {
     -webkit-align-self: flex-end;
         -ms-flex-item-align: end;
             align-self: flex-end;
-    max-width: 30em; }
+    max-width: 30em;
+    margin-bottom: 10px; }
 
 .info {
   display: -webkit-flex;
