@@ -1,0 +1,76 @@
+$dark-blue: #032E46;
+$blue: #043D5D;
+$dark-green: #0F595E;
+$green: #23B684;
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	font-size: 62.5%;
+	font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+%font-adjustements {
+	display: block;
+	line-height: 90%;
+}
+
+%circle-shaped {
+	border-radius: 50%;
+}
+
+.introduction {
+	position: relative;
+	background-color: $green;
+	height: 100%;
+
+	&__content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		display: flex;
+		align-items: center;
+	}
+
+	&__profilePic {
+		margin: 0;
+		width: 15rem;
+
+		@extend %circle-shaped;
+
+		> img {
+			@extend %circle-shaped;
+			margin: 0;
+			border: 0.5em solid #fff;
+			width: 100%;
+			box-shadow: 3px 3px $dark-green, inset 3px 3px $dark-green;
+		}
+	}
+
+	&__text {
+		margin: 0;
+		color: #fff;
+		font-size: 2em;
+		text-shadow: 2px 2px $dark-green;
+		white-space: nowrap;
+
+		> strong {
+			text-shadow: 3px 3px $dark-green;
+			font-size: 3em;
+
+			&:first-child {
+				margin-bottom: 0.5em;
+			}
+		}
+
+		> strong, > span {
+			@extend %font-adjustements;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "bernardocs.github.io",
+  "version": "1.0.0",
+  "description": "My Personal Web Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bernardocs/bernardocs.github.io.git"
+  },
+  "author": "Bernardo Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bernardocs/bernardocs.github.io/issues"
+  },
+  "homepage": "https://github.com/bernardocs/bernardocs.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-if": "^2.0.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-useref": "^3.0.8"
+  }
+}
