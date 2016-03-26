@@ -1,3 +1,82 @@
+.introduction__profilePic > img, .introduction__socialMedia > a > svg {
+  border-radius: 50%; }
+
+.introduction__profilePic > img, .introduction__text > strong, .introduction__text > span, .introduction__contact > strong, .introduction__contact span, .introduction__socialMedia > a {
+  opacity: 0; }
+
+@-webkit-keyframes bounce {
+  from, 30%, 60%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3); }
+  30% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1); }
+  60% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+            transform: scale3d(0.9, 0.9, 0.9); }
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1); } }
+
+@keyframes bounce {
+  from, 30%, 60%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3); }
+  30% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1); }
+  60% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+            transform: scale3d(0.9, 0.9, 0.9); }
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1); } }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeInFromLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes fadeInFromLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+* {
+  box-sizing: border-box; }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -6,13 +85,6 @@ html, body {
 body {
   font-size: 62.5%;
   font-family: 'Roboto', 'Helvetica', sans-serif; }
-
-.introduction__text > strong, .introduction__text > span {
-  display: block;
-  line-height: 90%; }
-
-.introduction__profilePic, .introduction__profilePic > img {
-  border-radius: 50%; }
 
 .introduction {
   position: relative;
@@ -33,21 +105,163 @@ body {
         -ms-flex-align: center;
             align-items: center; }
   .introduction__profilePic {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
     margin: 0;
-    width: 15rem; }
+    margin: 0 2rem;
+    width: 10rem;
+    -webkit-flex-basis: 200px;
+        -ms-flex-preferred-size: 200px;
+            flex-basis: 200px; }
     .introduction__profilePic > img {
-      margin: 0;
-      border: 0.5em solid #fff;
+      display: block;
+      margin: 0 auto;
       width: 100%;
-      box-shadow: 3px 3px #0F595E, inset 3px 3px #0F595E; }
-  .introduction__text {
-    margin: 0;
+      border: 0.5em solid #fff;
+      box-shadow: 3px 3px #0F595E;
+      -webkit-animation-name: bounce;
+              animation-name: bounce;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-delay: 1s;
+              animation-delay: 1s;
+      -webkit-animation-iteration-count: 1;
+              animation-iteration-count: 1;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+  .introduction__text, .introduction__contact {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-flex-basis: 0;
+        -ms-flex-preferred-size: 0;
+            flex-basis: 0;
     color: #fff;
     font-size: 2em;
-    text-shadow: 2px 2px #0F595E;
-    white-space: nowrap; }
+    text-shadow: 1px 1px #0F595E;
+    text-align: center; }
+  .introduction__text {
+    margin: 0;
+    padding-left: 5%; }
     .introduction__text > strong {
       text-shadow: 3px 3px #0F595E;
-      font-size: 3em; }
-      .introduction__text > strong:first-child {
-        margin-bottom: 0.5em; }
+      font-size: 3em;
+      -webkit-animation-name: fadeInFromLeft;
+              animation-name: fadeInFromLeft;
+      -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.1);
+              animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.1);
+      -webkit-animation-duration: 700ms;
+              animation-duration: 700ms;
+      -webkit-animation-iteration-count: 1;
+              animation-iteration-count: 1;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+      .introduction__text > strong:nth-of-type(1) {
+        -webkit-animation-delay: 200ms;
+                animation-delay: 200ms; }
+      .introduction__text > strong:nth-of-type(2) {
+        -webkit-animation-delay: 400ms;
+                animation-delay: 400ms; }
+      .introduction__text > strong:nth-of-type(3) {
+        -webkit-animation-delay: 600ms;
+                animation-delay: 600ms; }
+      .introduction__text > strong:nth-of-type(4) {
+        -webkit-animation-delay: 800ms;
+                animation-delay: 800ms; }
+    .introduction__text > span {
+      -webkit-animation-name: fadeIn;
+              animation-name: fadeIn;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-iteration-count: 1;
+              animation-iteration-count: 1;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards;
+      -webkit-animation-delay: 1s;
+              animation-delay: 1s;
+      font-weight: 100; }
+    .introduction__text > strong, .introduction__text > span {
+      display: block;
+      line-height: 90%; }
+  .introduction__contact {
+    padding-right: 5%;
+    color: #fff; }
+    .introduction__contact > strong, .introduction__contact span {
+      -webkit-animation-name: fadeIn;
+              animation-name: fadeIn;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-iteration-count: 1;
+              animation-iteration-count: 1;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards;
+      -webkit-animation-delay: 1s;
+              animation-delay: 1s; }
+    .introduction__contact > strong {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-shadow: 2.5px 2.5px #0F595E; }
+    .introduction__contact > span {
+      font-weight: 100;
+      display: block; }
+  .introduction__socialMedia {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 1rem;
+    height: 3.5rem; }
+    .introduction__socialMedia > a {
+      margin: 0 0.5rem;
+      -webkit-transition: margin 200ms;
+      transition: margin 200ms;
+      -webkit-animation: bounce 500ms 1;
+              animation: bounce 500ms 1;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+      .introduction__socialMedia > a:nth-of-type(1) {
+        -webkit-animation-delay: 1250ms;
+                animation-delay: 1250ms; }
+      .introduction__socialMedia > a:nth-of-type(2) {
+        -webkit-animation-delay: 1300ms;
+                animation-delay: 1300ms; }
+      .introduction__socialMedia > a:nth-of-type(3) {
+        -webkit-animation-delay: 1350ms;
+                animation-delay: 1350ms; }
+      .introduction__socialMedia > a:nth-of-type(4) {
+        -webkit-animation-delay: 1400ms;
+                animation-delay: 1400ms; }
+      .introduction__socialMedia > a:nth-of-type(5) {
+        -webkit-animation-delay: 1450ms;
+                animation-delay: 1450ms; }
+      .introduction__socialMedia > a > svg {
+        box-shadow: 1px 1px #0F595E;
+        fill: #fff;
+        width: 3rem;
+        -webkit-transition: all 200ms;
+        transition: all 200ms; }
+      .introduction__socialMedia > a:hover {
+        margin: 0; }
+        .introduction__socialMedia > a:hover > svg {
+          background-color: #fff;
+          width: 4rem; }
+  .introduction__facebook:hover > svg {
+    fill: #3b5998; }
+  .introduction__twitter:hover > svg {
+    fill: #55acee; }
+  .introduction__linkedin:hover > svg {
+    fill: #0077b5; }
+  .introduction__github:hover > svg {
+    fill: #4183c4; }
+  .introduction__mail:hover > svg {
+    fill: #043D5D; }
