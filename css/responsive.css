@@ -1,0 +1,19 @@
+@media (max-width: 992px) {
+  body {
+    font-size: 45%; }
+  .introduction {
+    padding-top: 2rem; }
+    .introduction__content {
+      position: static;
+      -webkit-transform: none;
+              transform: none;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .introduction__text {
+      padding-left: 0;
+      margin-bottom: 2rem; }
+    .introduction__contact {
+      padding-right: 0; } }

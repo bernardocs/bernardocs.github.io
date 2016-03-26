@@ -1,0 +1,24 @@
+@media (max-width: 992px) {
+	body {
+		font-size: 45%;
+	}
+
+	.introduction {
+		padding-top: 2rem;
+
+		&__content {
+			position: static;
+			transform: none;
+			flex-direction: column;
+		}
+
+		&__text {
+			padding-left: 0;
+			margin-bottom: 2rem;
+		}
+
+		&__contact {
+			padding-right: 0;
+		}
+	}	
+}
