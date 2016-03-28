@@ -1,0 +1,32 @@
+.ie-helper {
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000; }
+  .ie-helper__pop {
+    position: absolute;
+    border-radius: 3px;
+    padding: 20px;
+    width: 600px;
+    height: 200px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+    .ie-helper__pop > span {
+      font-size: 20px;
+      color: #032E46;
+      display: block; }
+    .ie-helper__pop > a {
+      margin-top: 10px;
+      display: block;
+      float: left;
+      width: 50%;
+      text-align: center; }
+      .ie-helper__pop > a > img {
+        display: inline;
+        width: 50px; }
