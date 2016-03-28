@@ -288,3 +288,6 @@ body {
     .introduction__resume > svg {
       width: 1rem;
       fill: #fff; }
+
+.ie-helper {
+  display: none; }
