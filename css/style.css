@@ -142,8 +142,7 @@ body {
     text-shadow: 1px 1px #1F7E5D;
     text-align: center; }
   .introduction__text {
-    margin: 0;
-    padding-left: 5%; }
+    margin: 0; }
     .introduction__text > strong {
       text-shadow: 0 3px #1F7E5D;
       font-size: 3em;
