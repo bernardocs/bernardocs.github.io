@@ -1,0 +1,42 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.ie-helper {
+		z-index: 999;
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.75);
+
+		&__pop {
+			position: absolute;
+			border-radius: 3px;
+			padding: 20px;
+			width: 600px;
+			height: 200px;
+			background-color: #fff;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			> span {
+				font-size: 20px;
+				color: #032E46;
+				display: block;
+			}
+
+			> a {
+				margin-top: 10px;
+				display: block;
+				float: left;
+				width: 50%;
+				text-align: center;
+
+				> img {
+					display: inline;
+					width: 50px;
+				}
+			}
+		}
+	}
+}
