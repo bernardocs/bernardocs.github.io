@@ -1,7 +1,7 @@
 .introduction__profilePic > img, .introduction__socialMedia > a > svg {
   border-radius: 50%; }
 
-.introduction__profilePic > img, .introduction__text > strong, .introduction__text > span, .introduction__contact > strong, .introduction__contact span, .introduction__socialMedia > a {
+.introduction__profilePic > img, .introduction__text > strong, .introduction__text > span, .introduction__contact > strong, .introduction__contact span, .introduction__socialMedia > a, .introduction__resume {
   opacity: 0; }
 
 @-webkit-keyframes bounce {
@@ -267,6 +267,18 @@ body {
   .introduction__mail:hover > svg {
     fill: #043D5D; }
   .introduction__resume {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
     color: #fff;
     font-weight: 100;
     text-shadow: 1px 1px #1F7E5D;
