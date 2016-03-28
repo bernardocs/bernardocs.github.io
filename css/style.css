@@ -266,3 +266,13 @@ body {
     fill: #4183c4; }
   .introduction__mail:hover > svg {
     fill: #043D5D; }
+  .introduction__resume {
+    color: #fff;
+    font-weight: 100;
+    text-shadow: 1px 1px #1F7E5D;
+    text-decoration: none; }
+    .introduction__resume:hover {
+      text-decoration: underline; }
+    .introduction__resume > svg {
+      width: 1rem;
+      fill: #fff; }
