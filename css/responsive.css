@@ -1,6 +1,7 @@
 @media (max-width: 992px) {
   body {
-    font-size: 45%; }
+    font-size: 45%;
+    height: auto; }
   .introduction {
     padding-top: 2rem; }
     .introduction__content {
