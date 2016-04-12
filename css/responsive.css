@@ -3,7 +3,7 @@
     font-size: 45%;
     height: auto; }
   .introduction {
-    padding-top: 2rem; }
+    padding: 2rem 0; }
     .introduction__content {
       position: static;
       -webkit-transform: none;

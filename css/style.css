@@ -80,7 +80,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%; }
+  height: 100%;
+  background-color: #23B684; }
 
 body {
   font-size: 62.5%;
@@ -88,7 +89,6 @@ body {
 
 .introduction {
   position: relative;
-  background-color: #23B684;
   height: 100%; }
   .introduction__content {
     position: absolute;
